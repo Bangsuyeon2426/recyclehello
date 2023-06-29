@@ -45,7 +45,7 @@ app.listen(3000, () => {
 //접속하면 페이지 출력
 app.get('/', (request, response) => {
     fs.readFile('public/list.html', 'utf-8', (error, data) => {
-        connection.query('select * from recycle ORDER BY num DESC', (error, results, fields) => {
+        connection.query('select * from recycle ', (error, results, fields) => {
             if (error) throw error;
             response.send(ejs.render(data, {
                 data: results,
