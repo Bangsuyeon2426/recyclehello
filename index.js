@@ -98,7 +98,7 @@ app.get("/search", (req, res) => {
     let sqlQuery;
     let sqlParams;
 
-    if (category === "all") {
+    if (category === "전체") {
         // 모든 카테고리에서 검색
         sqlQuery = "SELECT * FROM recycle WHERE item LIKE ?";
         sqlParams = [`%${query}%`];
