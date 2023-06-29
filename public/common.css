@@ -10,7 +10,7 @@
 * {
     margin: 0 auto;
     color: #0f0f0f;
-    font-family: 'SUIT-Regular';
+    font-family: 'TAEBAEKmilkyway';
 }
 
 body {
@@ -59,6 +59,7 @@ header::after {
 }
 
 #hehe {
+    font-family: 'TAEBAEKmilkyway';
     cursor: pointer;
 }
 
