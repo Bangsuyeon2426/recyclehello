@@ -1,0 +1,147 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'TAEBAEKmilkyway';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/TAEBAEKmilkyway.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: url(./image/beige-tiles.webp);
+}
+
+
+/* .content */
+
+.content {
+    width: 1240px;
+    position: relative;
+    font-family: 'TAEBAEKmilkyway';
+
+}
+
+fieldset {
+    border-radius: 20px;
+    position: absolute;
+    border: 2px dashed #704f46;
+    width: 825px;
+    height: 700px;
+    margin-top: 290px;
+}
+
+.except {
+    cursor: pointer;
+    width: 400px;
+    font-family: 'TAEBAEKmilkyway';
+    position: relative;
+    top: 190px;
+    left: 90px;
+}
+
+.note {
+    width: 1240px;
+    position: absolute;
+    left: 100px;
+    z-index: -1;
+}
+
+.form {
+    width: 800px;
+    height: 950px;
+    position: absolute;
+    left: 160px;
+    text-align: center;
+    margin: 10px;
+    /* margin-left: 100px; */
+}
+
+th {
+    border-bottom: 3px solid #704f46;
+    font-size: 20px;
+    line-height: 50px;
+}
+
+tr {
+    border: 1px solid green;
+    /* background-color: aqua; */
+    margin: 10px;
+}
+
+td {
+    border-bottom: 1px solid #ccc;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+td>a {
+    background-color: #704f46;
+    border-radius: 6px;
+    color: #ccc;
+
+}
+
+td>a:hover {
+    background-color: orange;
+}
+
+.button {
+    font-family: 'TAEBAEKmilkyway';
+    margin-top: 50px;
+    border: 0;
+    font-weight: bolder;
+    font-size: 15px;
+    background-color: rgb(149, 216, 131);
+    border-radius: 6px;
+    width: 90px;
+    height: 30px;
+    position: relative;
+    bottom: -200px;
+    left: 220px;
+}
+
+.button:hover {
+    border: 0;
+    cursor: pointer;
+    background-color: rgb(230, 207, 56);
+}
+
+.sea {
+    font-family: 'TAEBAEKmilkyway';
+    background-color: rgb(149, 216, 131);
+    border-radius: 6px;
+    cursor: pointer;
+    height: 30px;
+    border: 0;
+    font-weight: 900;
+}
+
+.sea:hover {
+    cursor: pointer;
+}
+
+.sss {
+    position: absolute;
+    top: 285px;
+    left: 670px;
+}
+
+.sss>select {
+    font-family: 'TAEBAEKmilkyway';
+    font-weight: 900;
+    border: 0;
+    background-color: rgb(233, 233, 233);
+    border-radius: 15px;
+    outline: none;
+    height: 30px;
+}
+
+.sss>input {
+    font-family: 'TAEBAEKmilkyway';
+    font-weight: 900;
+    border: 0;
+    background-color: rgb(233, 233, 233);
+    border-radius: 15px;
+    outline: none;
+    height: 30px;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>list</title>
+    <script src="./js/jquery-1.10.2.min.js"></script>
+    <script src="./js/slick.js"></script>
+    <script src="./js/list.js"></script>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="./common.css">
+    <link rel="stylesheet" href="./list.css">
+
+    <script>
+        function redirectToHome() {
+            window.location.href = 'http://localhost:3000';
+        }
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <p><img src="./image/logo.png" alt="logo"></p>
+        <p id="hehe" onclick="redirectToHome()">분리배출 백과사전</p>
+    </header>
+
+    <div class="content">
+        <h1 class="except" onclick="redirectToHome()">분리배출 바로알기</h1>
+
+        <div class="note"><img src="./image/note1.png" alt="note"></div>
+
+        <form action="/" method="get" class="form">
+
+            <fieldset>
+                <table>
+                    <tr>
+                        <th>num</th>
+                        <th>item</th>
+                        <th>category</th>
+                        <th>method</th>
+                        <th>notice</th>
+                        <th>MODIFY</th>
+                        <th>DELETE</th>
+                    </tr>
+                    <% data.forEach(function (recycle, index) { %>
+                        <tr>
+                            <td>
+                                <%= recycle.num %>
+                            </td>
+                            <td>
+                                <%= recycle.item %>
+                            </td>
+                            <td>
+                                <%= recycle.category %>
+                            </td>
+                            <td>
+                                <%= recycle.method %>
+                            </td>
+                            <td>
+                                <%= recycle.notice %>
+                            </td>
+                            <td><a href="/modify/<%= recycle.num %>">MODIFY</a></td>
+                            <td><a href="/delete/<%= recycle.num %>">DELETE</a></td>
+                        </tr>
+                        <% }); %>
+                </table>
+            </fieldset>
+        </form>
+        <form action="/create" method="get">
+            <button type="submit" class="button">CREATE</button>
+        </form>
+        <form action="/search" method="get" class="sss">
+            <select name="category">
+                <option value="종이류,종이팩">종이류,종이팩</option>
+                <option value="금속캔,고철">금속캔,고철</option>
+                <option value="유리병류">유리병류</option>
+                <option value="플라스틱용기류">플라스틱용기류</option>
+                <option value="비닐류">비닐류</option>
+                <option value="스티로폼">스티로폼</option>
+                <option value="아이스팩">아이스팩</option>
+                <option value="의류">의류</option>
+                <option value="음식물쓰레기">음식물쓰레기</option>
+                <option value="그외">그외</option>
+            </select>
+            <input type="text" name="query" placeholder="입력">
+            <button type="submit" class="sea">search</button>
+        </form>
+
+    </div>
+</body>
+
+</html>

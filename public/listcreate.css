@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'TAEBAEKmilkyway';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/TAEBAEKmilkyway.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: url(./image/fabric.webp);
+}
+
+/* .content */
+.content {
+    margin-top: -70px;
+    width: 1000px;
+    position: relative;
+    font-family: 'TAEBAEKmilkyway';
+
+}
+
+/* .content:not(.except) {
+    font-size: 20px;
+} */
+
+fieldset {
+    border: 5px double rgb(187, 186, 186);
+    height: 550px;
+    font-size: 25px;
+}
+
+h1 {
+    position: absolute;
+    right: 290px;
+    top: 220px;
+}
+
+span {
+    font-family: 'TAEBAEKmilkyway';
+}
+
+h1>span:hover {
+    color: aqua;
+}
+
+.note {
+    position: absolute;
+    z-index: -1;
+}
+
+.form {
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    right: 235px;
+    top: 300px;
+    margin: 10px;
+}
+
+input:not(.submit) {
+    font-size: 18px;
+    height: 30px;
+    color: rgb(90, 13, 171);
+    width: 280px;
+    background-color: aquamarine;
+    border-radius: 15px;
+    border: 0;
+    outline: none;
+    background-color: rgb(233, 233, 233);
+}
+
+select {
+    height: 30px;
+    text-align: center;
+    width: 280px;
+    border: 0;
+    background-color: rgb(233, 233, 233);
+    border-radius: 15px;
+}
+
+textarea {
+    font-size: 18px;
+    width: 280px;
+    height: 180px;
+    color: rgb(90, 13, 171);
+    border: 0;
+    background-color: rgb(233, 233, 233);
+    border-radius: 15px;
+    resize: none;
+    outline: none;
+}
+
+label {
+    margin-right: 40px;
+}
+
+.submit {
+    font-family: 'TAEBAEKmilkyway';
+    cursor: pointer;
+    text-align: center;
+    letter-spacing: 10px;
+    font-size: 25px;
+    font-weight: bolder;
+    width: 100px;
+    height: 55px;
+    position: absolute;
+    bottom: -78px;
+    right: 220px;
+    border: 3px dashed #8c8a8a;
+    background-color: rgb(149, 216, 131);
+    border-radius: 18px;
+    /* box-shadow: 3px 3px 3px 3px rgb(51, 130, 29); */
+
+}
+
+.submit:hover {
+    background-color: rgb(230, 207, 56);
+    box-shadow: 3px 3px 3px 3px rgb(148, 132, 26);
+}

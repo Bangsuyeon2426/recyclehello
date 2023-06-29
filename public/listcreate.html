@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>listcreate</title>
+    <script src="./js/jquery-1.10.2.min.js"></script>
+    <script src="./js/slick.js"></script>
+    <script src="./js/list.js"></script>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="./slick.css">
+    <link rel="stylesheet" href="./slick-theme.css">
+    <link rel="stylesheet" href="./common.css">
+    <link rel="stylesheet" href="./listcreate.css">
+
+    <script>
+        function redirectToHome() {
+            window.location.href = 'http://localhost:3000';
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <p><img src="./image/logo.png" alt="logo"></p>
+        <p id="hehe" onclick="redirectToHome()">분리배출 백과사전</p>
+    </header>
+
+    <div class="content">
+        <h1><span class="except">올바른 분리배출 방법을 입력해주세요</span></h1>
+        <div class="note"><img src="./image/note.png" alt="note"></div>
+        <form method="post" class="form">
+            <fieldset>
+                <legend>분리배출 백과사전</legend>
+                <table>
+                    <tr>
+                        <td><label>num</label></td>
+                        <td><input type="number" name="num"></td>
+                    </tr>
+                    <tr>
+                        <td><label>item</label></td>
+                        <td><input type="text" name="item"></td>
+                    </tr>
+                    <tr>
+                        <td><label>category</label></td>
+                        <td>
+                            <select name="category" id="category">
+                                <option value="종이류,종이팩">종이류,종이팩</option>
+                                <option value="금속캔,고철">금속캔,고철</option>
+                                <option value="유리병류">유리병류</option>
+                                <option value="플라스틱용기류">플라스틱용기류</option>
+                                <option value="비닐류">비닐류</option>
+                                <option value="스티로폼">스티로폼</option>
+                                <option value="아이스팩">아이스팩</option>
+                                <option value="의류">의류</option>
+                                <option value="음식물쓰레기">음식물쓰레기</option>
+                                <option value="그외">그외</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>method</label></td>
+                        <td>
+                            <textarea name="method" id="method" cols="30" rows="10"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>notice</label></td>
+                        <td><textarea name="notice" id="notice" cols="30" rows="10"></textarea></td>
+                    </tr>
+
+                </table>
+            </fieldset>
+            <input type="submit" class="submit">
+        </form>
+    </div>
+</body>
+
+</html>
